@@ -6,5 +6,21 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <fieldset>
+      <legend>Weather App</legend>
+      <label for="search-box">Set Location</label>
+      <input type="search" id="search-box" placeholder="Choose the town" />
+      <label for="unit-mesure">Choose the unit of temperature</label>
+      <input
+        type="radio"
+        name="unite"
+        id="unit-mesure"
+        value="metric"
+        checked
+      />°C
+      <input type="radio" name="unite" id="unit-mesure" value="imperial" />°F
+      <button type="submit">Get Weather</button>
+    </fieldset>
+  </body>
 </html>
